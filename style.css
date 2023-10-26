@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
+body {
+  background: rgb(245, 245, 247);
+}
+.container {
+  background: rgb(224, 219, 219);
+  margin: 60 px auto;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+.header {
+  text-align: center;
+  background: rgb(63, 63, 127);
+  padding: 15px;
+  color: rgb(225, 225, 85);
+  margin: 30px 0;
+  font-size: 20px;
+  border-radius: 50px 50px;
+}
+.header h1 {
+  margin-bottom: 10px;
+}
+.header h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+.img-area {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  border: 15px groove rgb(77, 77, 210);
+}
+.img-area img {
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  flex: 1;
+  padding: 30px;
+}
+.left p {
+  line-height: 2;
+}
+.left ul li {
+  line-height: 2;
+  margin-left: 20px;
+}
+.left h3 {
+  color: rgb(14, 14, 123);
+}
+.left h4 {
+  color: rgb(50, 50, 160);
+}
+
+h2 {
+  background: rgb(61, 61, 128);
+  padding: 15px;
+  color: beige;
+  margin: 30px 0;
+  font-size: 20px;
+  border-radius: 0 50px 50px 0;
+}
+.right {
+  flex: 1;
+  padding: 30px;
+}
+.right h3 {
+  margin-bottom: 15px;
+}
+.right p {
+  line-height: 2.9;
+}
+.right ul li {
+  line-height: 2;
+  margin-left: 20px;
+}
+.right h3 {
+  color: rgb(14, 14, 123);
+}
+.right h4 {
+  color: rgb(50, 50, 160);
+}
+
+@media only screen and (max-width: 768px) and(max-width: 991px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+    height: auto;
+  }
+  h2 {
+    font-size: 15px;
+  }
+}
+.Coordonnées {
+  margin-top: 30px;
+  padding-left: 10px;
+  background: rgb(63, 63, 127);
+  font-size: 20px;
+  color: azure;
+  border-radius: 0 50px 50px 0;
+}
